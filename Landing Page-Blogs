@@ -1,0 +1,329 @@
+here i add html css and js code for my landing page blog section 
+-------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #df2727;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ff04af;
+        }
+
+        .navbar .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .navbar .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .navbar .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .blogs-section {
+            padding: 50px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .blogs-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .filters {
+            margin-bottom: 30px;
+        }
+
+        .filters button {
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .filters button.active {
+            background-color: #0056b3;
+        }
+
+        .filters button:hover {
+            background-color: #e37f0d;
+        }
+
+        .blogs-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .blog-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: scale(1.05);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-card-content {
+            padding: 15px;
+        }
+
+        .blog-card-content h3 {
+            font-size: 1.5em;
+            margin: 0;
+            color: #333;
+        }
+
+        .blog-card-content p {
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .blog-card-content a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .blog-card-content a:hover {
+            text-decoration: underline;
+        }
+        footer {
+    background-color: #b7aa6c;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer .name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .social {
+    margin: 20px 0;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    color: #0839e9;
+}
+
+footer .end {
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+footer .copyright_text {
+    display: block;
+    margin-top: 10px;
+}
+
+footer .foot {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer .foot a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .foot a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Landing Page.html">Home</a>
+        <a href="About LP.html">About</a>
+        <a href="Blogs LP.html">Blogs</a>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Categories</a>
+            <div class="dropdown-content">
+                <a href="#" data-category="all">All</a>
+                <a href="#" data-category="history">History</a>
+                <a href="#" data-category="festivals">Festivals</a>
+                <a href="#" data-category="guides">Guides</a>
+            </div>
+        </div>
+        <a href="Contact LP.html">Contact</a>
+    </div>
+
+    <section id="blogs" class="blogs-section">
+        <h2>Latest Articles</h2>
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="history">History</button>
+            <button class="filter-btn" data-category="festivals">Festivals</button>
+            <button class="filter-btn" data-category="guides">Guides</button>
+        </div>
+        <div class="blogs-container">
+            <div class="blog-card" data-category="history">
+                <img src="https://i.pinimg.com/236x/e1/ff/c1/e1ffc1c4a8b134b3d30c5c98f9f338b1.jpg" alt="Blog 1">
+                <div class="blog-card-content">
+                    <h3>Understanding Temple Architecture</h3>
+                    <p>Explore the intricate details and historical significance of temple architecture in India.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card" data-category="festivals">
+                <img src="https://i.pinimg.com/236x/a2/48/3c/a2483c7e2b13a2bd308b5c062b7139c4.jpg" alt="Blog 2">
+                <div class="blog-card-content">
+                    <h3>Festivals at Famous Temples</h3>
+                    <p>Discover the vibrant festivals celebrated at some of India's most revered temples.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card" data-category="guides">
+                <img src="https://i.pinimg.com/236x/69/ad/00/69ad006e8a9d57c25f58ab350cb0937e.jpg" alt="Blog 3">
+                <div class="blog-card-content">
+                    <h3>Visitor's Guide to Major Temples</h3>
+                    <p>A comprehensive guide for visitors to the most prominent temples across India.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card" data-category="history">
+                <img src="https://i.pinimg.com/236x/b1/0c/b3/b10cb3c1b0af46e74cc24f3f7eb51e90.jpg" alt="Blog 4">
+                <div class="blog-card-content">
+                    <h3>The Evolution of Temple Art</h3>
+                    <p>Learn about the evolution of art and sculpture in Indian temples through the ages.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="name">Preeti Fartyal</p>
+        <p>
+          To connect with me- please click on the link given below. Follow me Guys
+          and get in touch:
+        </p>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100093957832646"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://instagram.com/_preeti0318?igshid=MzNlNGNkZWQ4Mg=="
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/preeti-fartyal-90414024a"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://twitter.com/preetiFartyal18?t=6osU9Ar_sC8X0x5NFa-32w&s=09"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+        <p class="end">Copyright by Preeti Fartyal</p>
+        <span class="copyright_text">@SacredPilgrimages<span>
+        <span class="foot"
+          ><a href="#">Privacy policy</a><a href="#">Terms & condition</a></span>
+      </footer>
+    <script>
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const category = button.getAttribute('data-category');
+                document.querySelectorAll('.blog-card').forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        document.querySelectorAll('.dropdown-content a').forEach(link => {
+            link.addEventListener('click', () => {
+                const category = link.getAttribute('data-category');
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    if (btn.getAttribute('data-category') === category) {
+                        btn.click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
