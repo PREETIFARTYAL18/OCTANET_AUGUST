@@ -1,0 +1,168 @@
+HERE I ADD OF HTML CSS AND JAVASCRIPT CODE FOR CONTACT US SECTION
+------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #13f9c7;
+        }
+
+        .navbar {
+            background-color: #0783f0;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .contact-section {
+            padding: 50px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #ff002f;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #db9201;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: #f12189;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #027256;
+        }
+
+        footer {
+            background-color: #006aff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            .contact-form {
+                padding: 20px;
+            }
+
+            .contact-form input, .contact-form textarea {
+                padding: 10px;
+            }
+
+            .contact-form button {
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Landing Page.html">Home</a>
+        <a href="About LP.html">About</a>
+        <a href="Blogs LP.html">Blogs</a>
+        <a href="Contact LP.html">Contact</a>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button onclick="submitForm()">Send Message</button>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100093957832646"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/_preeti0318?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/preeti-fartyal-90414024a"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/preetiFartyal18?t=6osU9Ar_sC8X0x5NFa-32w&s=09"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Preeti Fartyal. All Rights Reserved.</p>
+        <p>Privacy Policy | Terms & Conditions</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Thank you, ' + name + '! Your message has been sent.');
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+    </script>
+</body>
+</html>
