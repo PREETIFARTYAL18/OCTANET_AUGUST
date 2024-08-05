@@ -1,0 +1,594 @@
+HERE I ADD HTML CSS AND JAVASCRIPT CODE
+------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="Landingpage.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="temple.jpeg" alt="Logo">
+                <h1>Sacred Pilgrimages</h1>
+            </div>
+            <nav>
+                <b>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="About LP.html">About</a></li>
+                    <li><a href="Blogs LP.html">Blogs</a></li>
+                    <li><a href="Contact LP.html">Contact</a></li>
+                    <li><a href="Subscribe" class="btn">Subscribe</a></li>
+                </ul>
+                </b>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <h1><marquee>"Explore the serenity of India's sacred pilgrimages"</marquee></h1>
+        <p class="hero1"><b>"Discover the rich cultural heritage and spiritual essence of temples in India.<br>Plan your visit today to experience tranquility like never before".</b></p>
+        <button onclick="learnMore()">Learn More</button>
+    </div>
+    <br><br>
+  <section class="about">
+    <div class="main">
+      <img src="https://i.pinimg.com/474x/24/cd/06/24cd063644ac7084c69dc2063c0753ca.jpg" height="700" width="700" />
+      <div class="text">
+        <h2>Ram Mandir</h2>
+        <h5>Location: Ayodhya, Uttar Pradesh<br>
+          Worshipped Deity: Lord Rama</h5>
+        <p>A newly constructed temple on the site believed to be the birthplace of Lord Rama. The Ram Mandir symbolizes a significant aspect of Indian heritage and devotion, drawing pilgrims from across the country. Its construction marks a momentous event in India's spiritual and cultural history, reflecting the devotion of millions.
+        </p>
+        <a href="#">Read More ➡</a>
+    </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="main">
+        <div class="text">
+            <h2>Akshardham Temple</h2>
+            <h5>Location: Delhi<br>
+              Worshipped Deity: Swaminarayan</h5>
+            <p>A grand display of India's ancient architecture and spiritual tradition, Akshardham Temple features intricate carvings, a mesmerizing musical fountain, and an enlightening cultural complex. Visitors can explore exhibitions showcasing Indian heritage, values, and contributions to the world. The temple stands as a testament to timeless devotion and craftsmanship.
+            </p>
+            <a href="#">Read More ➡</a>
+        </div>
+          <img src="https://i.pinimg.com/736x/e4/e1/28/e4e128a833b34e26bc788449b0ef4a24.jpg" height="700" width="700" />
+        </div>
+      </section>
+      <section class="about">
+        <div class="main">
+          <img src="https://i.pinimg.com/474x/90/ad/1a/90ad1a427dba47bf37a45d854ce5209e.jpg" height="700" width="700" />
+          <div class="text">
+            <h2>Kedarnath Temple</h2>
+            <h5>Location: Kedarnath, Uttarakhand<br>
+              Worshipped Deity: Lord Shiva</h5>
+            <p>Nestled in the majestic Himalayas, Kedarnath Temple is one of the twelve Jyotirlingas and a crucial part of the Chota Char Dham pilgrimage. Despite its remote location and challenging access, it draws countless devotees who seek spiritual solace. The temple's history, serene environment, and the backdrop of snow-capped peaks make it profoundly enchanting.
+            </p>
+            <a href="#">Read More ➡</a>
+        </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="main">
+            <div class="text">
+                <h2>Venkateswara Temple</h2>
+                <h5>Location: Tirupati, Andhra Pradesh<br>
+                  Worshipped Deity: Lord Venkateswara (Vishnu)</h5>
+                <p>Perched atop the Tirumala hills, Venkateswara Temple is one of the wealthiest and most visited religious sites globally. Devotees flock to this ancient temple to seek blessings from Lord Venkateswara. The temple's rituals, architectural grandeur, and spiritual ambiance make it a central hub of devotion and faith.
+                </p>
+                <a href="#">Read More ➡</a>
+            </div>
+              <img src="https://i.pinimg.com/564x/f6/e6/65/f6e665a9943edd13f9b9804b0c53b52f.jpg" height="700" 
+    width="700" />
+            </div>
+          </section>
+          <div class="contact-container">
+            <h1>Get in Touch</h1>
+        
+            <form action="process_form.php" method="POST">
+              <label for="contact-name">Name:</label>
+              <input type="text" id="contact-name" name="name" required><br>
+        
+              <label for="contact-email">Email:</label>
+              <input type="email" id="contact-email" name="email" required><br>
+        
+              <label for="contact-message">Message:</label>
+              <textarea id="contact-message" name="message" rows="4" cols="30" required></textarea><br>
+        
+              <input type="submit" value="Submit">
+            </form>
+          </div> 
+        
+          <footer>
+            <div class="footer-content">
+              <div class="footer-top">
+                <div class="footer-logo-details">
+                  <i class="fab fa-slack"></i>
+                  <span class="footer-logo-name">Sacred Pilgrimages</span>
+                </div>
+              </div>
+              <div class="footer-link-boxes">
+                <ul class="footer-box">
+                  <li class="footer-link-name">Get Connected with Us</li>
+                  <li><a href="Landing Page.html">Home</a></li>
+                  <li><a href="Contact LP.html">Contact Us</a></li>
+                  <li><a href="About LP.html">About Us</a></li>
+                </ul>
+                <ul class="footer-box">
+                  <li class="footer-link-name">Social Media</li>
+                  <li><a href="https://www.facebook.com/profile.php?id=100093957832646">Facebook</a></li>
+                  <li><a href="https://instagram.com/_preeti0318?igshid=MzNlNGNkZWQ4Mg==">Instagram</a></li>
+                  <li><a href="https://twitter.com/preetiFartyal18">Twitter</a></li>
+                  <li><a href="https://www.linkedin.com/in/preeti-fartyal-90414024a">LinkedIn</a></li>
+                </ul>
+                <ul class="footer-box">
+                  <li class="footer-link-name">Account</li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">My Account</a></li>
+                  <li><a href="#">Preferences</a></li>
+                </ul>
+                <ul class="footer-box footer-input-box">
+                  <li class="footer-link-name">Subscribe</li>
+                  <li><input type="text" placeholder="Enter your email"></li>
+                  <li><input type="button" value="Subscribe"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-bottom-details">
+              <div class="footer-bottom-text">
+                <span class="footer-copyright-text">@SacredPilgrimages. All rights reserved. 2023. <a href="Landing Page.html">Sacred Pilgrimages</a>. All rights reserved.</span>
+                <span class="footer-privacy-terms"><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></span>
+              </div>
+            </div>
+          </footer>      
+    <script src="Landing Page.js"></script>
+</body>
+</html>
+-----------------------------------------------------------------------------------
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgba(251, 130, 0, 0.5);
+    mix-blend-mode: multiply; 
+    color: rgb(14, 13, 13);
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #65cceb;
+    border-radius: 5px;
+}
+.btn{
+    background-color: #e23f73;
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition:ease-in-out .4s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .btn:hover{
+        transform: scale(1.2);
+    }
+    .hero {
+        background: url('https://dynamic.tourtravelworld.com/blog_images/25-amazing-and-famous-temples-in-india-20170317022315.jpg') no-repeat center center/cover;
+        height: 1025px;
+        width: 1470px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(214, 27, 27);
+    }
+    .hero1{
+      color: #000000af;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+    
+    .hero p {
+        font-size: 1.5rem;
+    }
+    
+    .hero button {
+        background-color: #ff9800;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .hero button:hover {
+        background-color: #241908;
+    }
+      .about{
+        width: 100%;
+        padding: 100px 0px;
+        background-color: #fff;
+    }
+    .about img{
+        height: auto;
+        width: 500px;
+    }
+    .text{
+        width:550px;
+    }
+    .main{
+        width:1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .text h2{
+        color: rgb(214, 27, 102);
+        font-size: 50px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .text h5{
+        color: rgb(7, 118, 236);
+        letter-spacing: 2px;
+        font-size: 22px;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+    }
+.text p{
+color:rgba(0, 0, 0, 0.8);
+letter-spacing: 1px;
+line-height: 28px;
+font-size: 18px;
+margin-bottom: 18px;
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 39px;
+    border-radius: 30px;
+    transition:ease-in-out .4s;
+}
+button:hover{
+    background-color: rgb(235, 83, 86);
+    border: 2px solid;
+    cursor: pointer;
+}
+  .container1 {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  input[type="submit"] {
+    background-color: #af7f4c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .bottom-details{
+	background-color: #a08945;
+}
+  footer .content{
+	max-width: 1550px;
+	margin: auto;
+	padding: 30px 40px 40px 40px;
+	background-color: #ccdfcd;
+  }
+  footer .content .top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 50px;
+  }
+  .content .top .logo-details{
+	color: #fff;
+	font-size: 30px;
+  }
+  .content .top .media-icons{
+	display: flex;
+  }
+  footer .content .link-boxes{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  }
+  .logo_name{
+	color: black;
+  }
+  .copyright_text{
+    background-color:  #45a049;;
+  }
+  .foot{
+	float: right;
+  }
+  .contact-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h1 {
+    text-align: center;
+  }
+  
+  .contact-container label {
+    font-weight: bold;
+  }
+  
+  .contact-container input[type="text"],
+  .contact-container input[type="email"],
+  .contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .contact-container textarea {
+    height: 100px;
+  }
+  
+  .contact-container input[type="submit"] {
+    background-color: #af894c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .contact-container input[type="submit"]:hover {
+    background-color: #af894c;
+  }
+  
+  .footer-content {
+    max-width: 1550px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+    background-color: #eae0ca;
+  }
+  
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  
+  .footer-logo-details {
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .footer-logo-name {
+    color: rgb(0, 0, 0);
+  }
+  
+  .footer-link-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-box {
+    list-style: none;
+  }
+  
+  .footer-link-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-box li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-box a {
+    color: #0c5af7;
+    text-decoration: none;
+  }
+  
+  .footer-box a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-input-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .footer-input-box input[type="button"] {
+    width: 100%;
+    background-color: #af894c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .footer-input-box input[type="button"]:hover {
+    background-color: #af894c;
+  }
+  
+  .footer-bottom-details {
+    background-color: #af894c;
+  }
+  
+  .footer-bottom-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: white;
+  }
+  
+  .footer-copyright-text {
+    background-color: #af894c;
+  }
+  
+  .footer-privacy-terms {
+    display: flex;
+  }
+  
+  .footer-privacy-terms a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .footer-privacy-terms a:hover {
+    text-decoration: underline;
+  }
+  ------------------------------------------------------------------------
+function learnMore() {
+    alert("Thank you for showing interest! More details will be available soon.");
+}
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+    const nameInput = document.getElementById('contact-name');
+    const emailInput = document.getElementById('contact-email');
+    const messageInput = document.getElementById('contact-message');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); 
+
+        // validation function
+        let isValid = true;
+
+        if (nameInput.value.trim() === '') {
+            alert('Please enter your name.');
+            isValid = false;
+        }
+
+        if (emailInput.value.trim() === '') {
+            alert('Please enter your email.');
+            isValid = false;
+        } else if (!validateEmail(emailInput.value.trim())) {
+            alert('Please enter a valid email address.');
+            isValid = false;
+        }
+
+        if (messageInput.value.trim() === '') {
+            alert('Please enter your message.');
+            isValid = false;
+        }
+
+        // submit the valid form only
+        if (isValid) {
+            alert('Form submitted successfully!');
+            form.submit();
+        }
+    });
+
+    function validateEmail(email) {
+        const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return re.test(email);
+    }
+});
