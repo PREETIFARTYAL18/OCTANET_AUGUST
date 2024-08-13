@@ -1,0 +1,51 @@
+This HTML file creates a basic ToDoList app:
+
+- **Header:** Displays the logo and title.
+- **Input Section:** Allows users to add new tasks.
+- **Filter Buttons:** Lets users filter tasks by status (All, Completed, Pending).
+- **Task List:** Shows added tasks in a list format.
+- **Footer:** Contains a copyright notice.
+
+HERE BELOW THE CODE ----------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDoList</title>
+  <link rel="stylesheet" href="ToDoList.css">
+</head>
+<body>
+  <div class="container">
+
+<!-------------->
+<div class="header">
+  <img src="icon.jpg" alt="Logo" class="Logo" height="40" width="40"/>
+  <h1>TO-DO-LIST</h1>
+</div>
+
+<!-------------------->
+<div class="Input-container"></div>
+<input type="text" id="taskInput" placeholder="Enter your task here"/>
+<button onclick="addTask()">Add Task</button>
+
+<!-------------->
+<div class="filter-container">
+  <button onclick="filterTask('all')">All Tasks</button>
+  <button onclick="filterTask('Completed')">Completed Tasks</button>
+  <button onclick="filterTask('Pending')">Pending Tasks</button>
+</div>
+
+
+<!---------------->
+<ul id="taskList"></ul>
+
+<!---------------------->
+<div class="footer">
+  <p>&copy; 2024 PreetiFartyal. All rights reserved</p>
+</div>
+  </div>
+  <script src="ToDoList.js"></script>
+</body>
+</html>
