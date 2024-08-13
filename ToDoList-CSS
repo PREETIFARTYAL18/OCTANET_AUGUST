@@ -1,0 +1,144 @@
+This CSS file styles the ToDoList app:
+
+- **Body:** Sets a gradient background and default font.
+- **Container:** Centers the app, adds padding, and styles the background with a shadow.
+- **Header:** Aligns the logo and title, and styles the title color.
+- **Input & Button:** Styles the task input field and add button for a clean look.
+- **Task List:** Styles the list items, including completed tasks and delete buttons.
+- **Filter Buttons:** Styles the filter buttons with hover effects.
+- **Footer:** Centers the footer text and styles it with color.
+
+HERE BELOW THE CSS CODE-----------------------------------------------
+
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #92d1cf,#dbb7f3);
+}
+
+.container{
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #92a8d1,#b7c3f3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+h1{
+  margin: 0;
+  color: #fff;
+}
+
+.input-container{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="text"]{
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+button{
+  padding: 10px 15px;
+  border: none;
+  background-color: #007BFF;
+  columns: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.completed {
+  background-color: #e1f7d5;
+}
+
+.delete-task-btn {
+  cursor: pointer;
+  color: #d9534f;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.task-status {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.task-status.checked {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.task-status.unchecked {
+  background-color: #fff;
+}
+
+.filter-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.filter-container button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.filter-container button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.footer p {
+  margin: 5px 0;
+}
