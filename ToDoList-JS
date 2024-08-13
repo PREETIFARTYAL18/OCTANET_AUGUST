@@ -1,0 +1,86 @@
+This JavaScript file handles the ToDoList app's functionality:
+
+- **`addTask()`**: Adds a new task to the list with a status checkbox and delete button.
+- **`toggleTaskStatus()`**: Toggles the task's status between completed and pending.
+- **`filterTask()`**: Filters tasks based on their status (All, Completed, Pending).
+
+HERE BELOW THE CODE OF JAVASCRIPT
+------------------------------------------------------------
+
+// Function to add tasks
+function addTask() {
+  const taskInput = document.getElementById('taskInput');
+  const taskList = document.getElementById('taskList');
+
+  if (taskInput.value.trim() !== '') {
+    const li = document.createElement('li');
+
+    // Task status checkbox
+    const statusCheckbox = document.createElement('div');
+    statusCheckbox.className = 'task-status unchecked';
+    statusCheckbox.onclick = function () {
+      toggleTaskStatus(this, li);
+    };
+
+    // Task text
+    const taskText = document.createElement('span');
+    taskText.textContent = taskInput.value;
+
+    // Delete button
+    const deleteBtn = document.createElement('span');
+    deleteBtn.textContent = '✖';
+    deleteBtn.className = 'delete-task-btn';
+    deleteBtn.onclick = function () {
+      taskList.removeChild(li);
+    };
+
+    li.appendChild(statusCheckbox);
+    li.appendChild(taskText);
+    li.appendChild(deleteBtn);
+    
+    taskList.appendChild(li);
+    taskInput.value = '';
+  }
+}
+
+// Function to toggle task status
+function toggleTaskStatus(checkbox, taskItem) {
+  if (checkbox.classList.contains('unchecked')) {
+    checkbox.classList.remove('unchecked');
+    checkbox.classList.add('checked');
+    taskItem.classList.add('completed');
+    checkbox.innerHTML = '✔'; // Green tick mark when completed
+  } else {
+    checkbox.classList.remove('checked');
+    checkbox.classList.add('unchecked');
+    taskItem.classList.remove('completed');
+    checkbox.innerHTML = '';
+  }
+}
+
+// Function to filter tasks
+function filterTask(status) {
+  const tasks = document.querySelectorAll('#taskList li');
+  
+  tasks.forEach(task => {
+    switch (status) {
+      case 'all':
+        task.style.display = 'flex';
+        break;
+      case 'Completed':
+        if (task.classList.contains('completed')) {
+          task.style.display = 'flex';
+        } else {
+          task.style.display = 'none';
+        }
+        break;
+      case 'Pending':
+        if (!task.classList.contains('completed')) {
+          task.style.display = 'flex';
+        } else {
+          task.style.display = 'none';
+        }
+        break;
+    }
+  });
+}
